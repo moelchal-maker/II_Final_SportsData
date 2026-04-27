@@ -2,7 +2,7 @@
 
 ## Project Purpose
 
-This project performs exploratory data analysis (EDA) and machine learning on a synthetic fitness and health tracking dataset. The goal is to uncover patterns and relationships between physical activity, physiological metrics, and subjective wellness indicators using Python data science libraries.
+In this project, we dive into a synthetic fitness and health tracking dataset to explore and analyze the data. Using Python and popular data science libraries, we look for interesting patterns and connections between physical activity, health measurements, and how people feel day to day.
 
 The project investigates four core research questions:
 
@@ -49,7 +49,7 @@ The dataset contains per-session fitness records for multiple users. Each row re
 
 ## Implementation Design
 
-The notebook is structured as a sequential pipeline. Rather than using class-based design, it follows a **functional and procedural** approach where each code section handles one analytical step. The one formal function defined is `buildCalorieModel()`.
+This notebook takes you step by step through the analysis, following a straightforward, functional style instead of using classes. Each code section tackles a specific task in the process. The only formal function you'll find here is called `buildCalorieModel()`.
 
 ## Code Sections
 
@@ -182,8 +182,8 @@ def buildCalorieModel(dataframe):
 | `r2_score(y_test, y_pred)` | Computes R² |
 
 #### Output
-- Prints model coefficients, intercept, RMSE, and R² to the console
-- Produces a scatter plot of actual vs predicted calories, with a red dashed line representing a perfect prediction (slope = 1)
+- Prints model coefficients, intercept, RMSE and R^2 to the console
+- plots a scatter plot of actual calories and predicted calories, with a red dashed line representing a perfect prediction (slope = 1)
 
 #### Finding
 
